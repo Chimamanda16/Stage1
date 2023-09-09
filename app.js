@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res)=>{
+app.get("/api", (req, res)=>{
    
     const slack_name = req.query.slack_name;
     const track = req.query.track;
@@ -12,7 +12,7 @@ app.get("/", (req, res)=>{
 
     const date = new Date();
     const current_day = date.toLocaleDateString(undefined, { weekday: 'long' });
-    const utc_time = date.toISOString();
+    const utc_time = date.toISOString().slice(0, 19) + 'Z';
     const github_file_url = "https://github.com/Chimamanda16/Stage1/blob/main/app.js";
     const github_repo_url = "https://github.com/Chimamanda16/Stage1.git";
 
