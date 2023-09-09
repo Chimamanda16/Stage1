@@ -1,0 +1,11 @@
+{
+  "name": "stage1",
+  "version": "1.0.0",
+  "description": "HNG Stage1 Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rexhaaaaa",
+  "license": "ISC"
+}
