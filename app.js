@@ -13,8 +13,8 @@ app.get("/", (req, res)=>{
     const date = new Date();
     const current_day = date.toLocaleDateString(undefined, { weekday: 'long' });
     const utc_time = date.toISOString();
-    const github_file_url = 'https://github.com/username/repo/blob/main/file_name.ext';
-    const github_repo_url = "https://github.com/Chimamanda16/HNG_Stage1.git";
+    const github_file_url = "https://github.com/Chimamanda16/Stage1/blob/main/app.js";
+    const github_repo_url = "https://github.com/Chimamanda16/Stage1.git";
 
 
     const response_data = {
